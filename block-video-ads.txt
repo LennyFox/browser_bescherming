@@ -25,35 +25,7 @@ youtube.com##+js(set, ytInitialPlayerResponse.adBreaks, [])
 !
 ! 
 !
-! eporner.com
-||eporner.com/dot/
-||eporner.com/event.php
-||eporner.com/xhr/vast/
-eporner.com##.hptab
-eporner.com###movieplayer-box-adv
-eporner.com###btasd
-eporner.com###deskadmiddle
-eporner.com##.vjs-inplayer-container
-!
-! pornhub
-||pornhub.com/_xa/ads
-/ht.js?site_$domain=pornhub.com
-pornhub.com##+js(set-constant, page_params.holiday_promo_prem, true)
-!
-!
-! xhamster.com
-||xhamster.com*/vast?
-||brick.xhamster.com^
-xhamster.*##div[data-role="promo-messages-wrapper"]
-xhamster.*##.video-thumb[class*="__look-like-item"]
-xhamster.*##div[class*="sp-b"]
-xhamster.*##div[class*="widget-section"]
-xhamster.*##div[class*="cam-wgt"]
-xhamster.*##[class*="sp-l"]
-xhamster.*##[class*="containerBottomSpot"]
-xhamster.com##[class$="-ts-init"]
-/v2/for-page?body=%
-&spotpagetype=*&statsuid=$xhr
+
 ! xgroovy.com
 ||a.orbsrv.com/ad-provider.js^
 ||magsrv.com/splash.php^
