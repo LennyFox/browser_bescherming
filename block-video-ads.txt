@@ -1,6 +1,6 @@
 ! Youtube – Hide sponsored 
 youtube.com##video-display-compact-button-group-layout-view-model
-youtube.com##ytd-in-feed-ad-layout-renderer square-image-layout-view-model
+youtube.com##ytd-ad-slot-renderer.style-scope.ytd-item-section-renderer
 ! 
 ! YouTube – Prevent ad data injection
 youtube.com##+js(set, ytInitialPlayerResponse.adPlacements, undefined)
