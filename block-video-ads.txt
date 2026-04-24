@@ -36,32 +36,9 @@ eporner.com###deskadmiddle
 eporner.com##.vjs-inplayer-container
 !
 ! pornhub
-pornhub.com##.livesex
-pornhub.com##.mgp_overlayContainer
-pornhub.com##.menuLinkDiv:has(a[href^="https://www.spicevids.com/"])
-pornhub.com##.joinNowCPPBtn
-pornhub.com##.uploadBtnContentSpicevids
-pornhub.com##[data-event="header_paid_tabs"]
-pornhub.com##a[data-event="header_paid_tabs"]
-pornhub.com##a[href*="?ats="]
-pornhub.com###js-abContainterMain
-pornhub.com##.js_promoItem
-pornhub.com##div[id^="customSkin"]
-pornhub.com##div.container:style(margin-top: 0px !important)
-pornhub.com###singleFeedSection > .emptyBlockSpace
-pornhub.com##.sniperModeEngaged
-pornhub.com##a[href*="?ats="]
-pornhub.com##a[href^="https://ads.trafficjunky.net/"]
-pornhub.com###pb_block
-pornhub.com##pb_template
-pornhub.com##.realsex
-pornhub.com###js-abContainterMain
-pornhub.com##.premiumPromoBanner
-pornhub.com##a[href^="https://a.adtng.com/"]
 ||pornhub.com/_xa/ads
 /ht.js?site_$domain=pornhub.com
 pornhub.com##+js(set-constant, page_params.holiday_promo_prem, true)
-pornhub.com##+js(prevent-setTimeout, \x41\x64\x62\x6c\x6f\x63\x6b\x20\x66\x6f\x72\x20\x70\x6f\x72\x6e\x68\x75\x62)
 !
 !
 ! xhamster.com
