@@ -1,0 +1,69 @@
+! Youtube – Hide sponsored 
+youtube.com##ytd-display-ad-renderer
+youtube.com##ytd-promoted-sparkles-web-renderer
+youtube.com##ytd-video-renderer:has([aria-label*="Sponsored"])
+youtube.com##ytd-rich-item-renderer:has([aria-label*="Sponsored"])
+! 
+! YouTube – Prevent ad data injection
+youtube.com##+js(set, ytInitialPlayerResponse.adPlacements, undefined)
+youtube.com##+js(set, ytInitialPlayerResponse.playerAds, [])
+youtube.com##+js(set, ytInitialPlayerResponse.adSlots, [])
+youtube.com##+js(set, playerResponse.adPlacements, [])
+youtube.com##+js(set, playerResponse.playerAds, [])
+! 
+! YouTube – Prevent scheduling of mid-video ads
+!  
+youtube.com##+js(set, ytInitialPlayerResponse.adBreakHeartbeatParams, undefined)
+youtube.com##+js(set, ytInitialPlayerResponse.adBreaks, [])
+!
+! End 
+! eporner.com
+||eporner.com/dot/
+||eporner.com/event.php
+||eporner.com/xhr/vast/
+eporner.com##.hptab
+eporner.com###movieplayer-box-adv
+eporner.com###btasd
+eporner.com###deskadmiddle
+eporner.com##.vjs-inplayer-container
+! pornhub
+pornhub.*##.livesex
+pornhub.*##.mgp_overlayContainer
+pornhub.*##.menuLinkDiv:has(a[href^="https://www.spicevids.com/"])
+pornhub.*##.joinNowCPPBtn
+pornhub.*##.uploadBtnContentSpicevids
+pornhub.*##[data-event="header_paid_tabs"]
+pornhub.com##a[data-event="header_paid_tabs"]
+pornhub.com##a[href*="?ats="]
+pornhub.*###js-abContainterMain
+pornhub.com##.js_promoItem
+pornhub.com##div[id^="customSkin"]
+pornhub.com##div.container:style(margin-top: 0px !important)
+pornhub.com###singleFeedSection > .emptyBlockSpace
+pornhub.com##.sniperModeEngaged
+pornhub.com##a[href*="?ats="]
+pornhub.com##a[href^="https://ads.trafficjunky.net/"]
+pornhub.com###pb_block
+pornhub.com,pornhubthbh7ap3u.onion##.realsex
+pornhub.com,pornhubthbh7ap3u.onion###js-abContainterMain
+pornhub.com,pornhubthbh7ap3u.onion,pornhub.net,youporn.com###pb_template
+pornhub.com,pornhubthbh7ap3u.onion##.premiumPromoBanner
+||pornhub.*/_xa/ads
+/ht.js?site_
+##a[href^="https://a.adtng.com/"]
+! xhamster.com
+||xhamster.com*/vast?
+||brick.xhamster.com^
+xhamster.*##div[data-role="promo-messages-wrapper"]
+xhamster.*##.video-thumb[class*="__look-like-item"]
+xhamster.*##div[class*="sp-b"]
+xhamster.*##div[class*="widget-section"]
+xhamster.*##div[class*="cam-wgt"]
+xhamster.*##[class*="sp-l"]
+xhamster.*##[class*="containerBottomSpot"]
+xhamster.com##[class$="-ts-init"]
+/v2/for-page?body=%
+&spotpagetype=*&statsuid=$xhr
+! xgroovy.com
+||a.orbsrv.com/ad-provider.js^
+||magsrv.com/splash.php^
