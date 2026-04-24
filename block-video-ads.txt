@@ -1,10 +1,5 @@
 ! Youtube – Hide sponsored 
-youtube.com##ytd-display-ad-renderer
-youtube.com##ytd-promoted-sparkles-web-renderer
-youtube.com##ytd-video-renderer:has([aria-label*="Sponsored"])
-youtube.com##ytd-rich-item-renderer:has([aria-label*="Sponsored"])
-www.youtube.com##+js(trusted-replace-fetch-response, '"adPlacements"', '"no_ads"', player?)
-www.youtube.com##+js(trusted-replace-fetch-response, '"adSlots"', '"no_ads"', player?
+youtube.com##video-display-compact-button-group-layout-view-model
 ! 
 ! YouTube – Prevent ad data injection
 youtube.com##+js(set, ytInitialPlayerResponse.adPlacements, undefined)
