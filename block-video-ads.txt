@@ -1,3 +1,13 @@
+[AdBlockPlus 2.0]
+!
+! Version: 2025
+! Title: Hide in video ads of Youtube
+!
+! Expires: 365 days
+! You are free to copy and distribute this file, but use at your own risk
+!
+
+
 ! Youtube – Hide sponsored 
 youtube.com##video-display-compact-button-group-layout-view-model
 youtube.com##ytd-ad-slot-renderer.style-scope.ytd-item-section-renderer
