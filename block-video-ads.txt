@@ -12,11 +12,11 @@ youtube.com##+js(set, playerResponse.adPlacements, [])
 youtube.com##+js(set, playerResponse.playerAds, [])
 ! 
 ! YouTube – Prevent scheduling of mid-video ads
-!  
 youtube.com##+js(set, ytInitialPlayerResponse.adBreakHeartbeatParams, undefined)
 youtube.com##+js(set, ytInitialPlayerResponse.adBreaks, [])
 !
-! End 
+! 
+!
 ! eporner.com
 ||eporner.com/dot/
 ||eporner.com/event.php
@@ -26,6 +26,7 @@ eporner.com###movieplayer-box-adv
 eporner.com###btasd
 eporner.com###deskadmiddle
 eporner.com##.vjs-inplayer-container
+!
 ! pornhub
 pornhub.*##.livesex
 pornhub.*##.mgp_overlayContainer
@@ -48,9 +49,13 @@ pornhub.com,pornhubthbh7ap3u.onion##.realsex
 pornhub.com,pornhubthbh7ap3u.onion###js-abContainterMain
 pornhub.com,pornhubthbh7ap3u.onion,pornhub.net,youporn.com###pb_template
 pornhub.com,pornhubthbh7ap3u.onion##.premiumPromoBanner
+pornhub.com##a[href^="https://a.adtng.com/"]
 ||pornhub.*/_xa/ads
-/ht.js?site_
-##a[href^="https://a.adtng.com/"]
+/ht.js?site_$domain=pornhub.com
+ornhub.com,pornhub.org,pornhub.net##+js(set-constant, page_params.holiday_promo_prem, true)
+pornhub.com,pornhub.org,pornhub.net##+js(prevent-setTimeout, \x41\x64\x62\x6c\x6f\x63\x6b\x20\x66\x6f\x72\x20\x70\x6f\x72\x6e\x68\x75\x62)
+!
+!
 ! xhamster.com
 ||xhamster.com*/vast?
 ||brick.xhamster.com^
