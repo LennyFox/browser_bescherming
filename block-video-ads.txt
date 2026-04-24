@@ -1,6 +1,6 @@
 [AdBlockPlus 2.0]
 !
-! Version: 2025
+! Version: 2026
 ! Title: Hide in video ads of Youtube
 !
 ! Expires: 365 days
