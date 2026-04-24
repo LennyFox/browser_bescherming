@@ -3,6 +3,8 @@ youtube.com##ytd-display-ad-renderer
 youtube.com##ytd-promoted-sparkles-web-renderer
 youtube.com##ytd-video-renderer:has([aria-label*="Sponsored"])
 youtube.com##ytd-rich-item-renderer:has([aria-label*="Sponsored"])
+www.youtube.com##+js(trusted-replace-fetch-response, '"adPlacements"', '"no_ads"', player?)
+www.youtube.com##+js(trusted-replace-fetch-response, '"adSlots"', '"no_ads"', player?
 ! 
 ! YouTube – Prevent ad data injection
 youtube.com##+js(set, ytInitialPlayerResponse.adPlacements, undefined)
@@ -28,15 +30,15 @@ eporner.com###deskadmiddle
 eporner.com##.vjs-inplayer-container
 !
 ! pornhub
-pornhub.*##.livesex
-pornhub.*##.mgp_overlayContainer
-pornhub.*##.menuLinkDiv:has(a[href^="https://www.spicevids.com/"])
-pornhub.*##.joinNowCPPBtn
-pornhub.*##.uploadBtnContentSpicevids
-pornhub.*##[data-event="header_paid_tabs"]
+pornhub.com##.livesex
+pornhub.com##.mgp_overlayContainer
+pornhub.com##.menuLinkDiv:has(a[href^="https://www.spicevids.com/"])
+pornhub.com##.joinNowCPPBtn
+pornhub.com##.uploadBtnContentSpicevids
+pornhub.com##[data-event="header_paid_tabs"]
 pornhub.com##a[data-event="header_paid_tabs"]
 pornhub.com##a[href*="?ats="]
-pornhub.*###js-abContainterMain
+pornhub.com###js-abContainterMain
 pornhub.com##.js_promoItem
 pornhub.com##div[id^="customSkin"]
 pornhub.com##div.container:style(margin-top: 0px !important)
@@ -45,15 +47,15 @@ pornhub.com##.sniperModeEngaged
 pornhub.com##a[href*="?ats="]
 pornhub.com##a[href^="https://ads.trafficjunky.net/"]
 pornhub.com###pb_block
-pornhub.com,pornhubthbh7ap3u.onion##.realsex
-pornhub.com,pornhubthbh7ap3u.onion###js-abContainterMain
-pornhub.com,pornhubthbh7ap3u.onion,pornhub.net,youporn.com###pb_template
-pornhub.com,pornhubthbh7ap3u.onion##.premiumPromoBanner
+pornhub.com##pb_template
+pornhub.com##.realsex
+pornhub.com###js-abContainterMain
+pornhub.com##.premiumPromoBanner
 pornhub.com##a[href^="https://a.adtng.com/"]
-||pornhub.*/_xa/ads
+||pornhub.com/_xa/ads
 /ht.js?site_$domain=pornhub.com
-ornhub.com,pornhub.org,pornhub.net##+js(set-constant, page_params.holiday_promo_prem, true)
-pornhub.com,pornhub.org,pornhub.net##+js(prevent-setTimeout, \x41\x64\x62\x6c\x6f\x63\x6b\x20\x66\x6f\x72\x20\x70\x6f\x72\x6e\x68\x75\x62)
+pornhub.com##+js(set-constant, page_params.holiday_promo_prem, true)
+pornhub.com##+js(prevent-setTimeout, \x41\x64\x62\x6c\x6f\x63\x6b\x20\x66\x6f\x72\x20\x70\x6f\x72\x6e\x68\x75\x62)
 !
 !
 ! xhamster.com
