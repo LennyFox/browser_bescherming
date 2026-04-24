@@ -6,8 +6,6 @@
 ! Expires: 365 days
 ! You are free to copy and distribute this file, but use at your own risk
 !
-
-
 ! Youtube – Hide sponsored 
 youtube.com##video-display-compact-button-group-layout-view-model
 youtube.com##ytd-ad-slot-renderer.style-scope.ytd-item-section-renderer
@@ -25,7 +23,50 @@ youtube.com##+js(set, ytInitialPlayerResponse.adBreaks, [])
 !
 ! 
 !
+! eporner.com
+eporner.com##.hptab
+eporner.com###movieplayer-box-adv
+eporner.com###btasd
+eporner.com##.vjs-inplayer-container
+||eporner.com/dot/
+||eporner.com/event.php
+||eporner.com/xhr/vast/
 
+!
+! pornhub.com
+pornhub.com##a[href^="https://ads.trafficjunky.net/"]
+pornhub.com##.menuLinkDiv:has(a[href^="https://www.spicevids.com/"])
+pornhub.com##a[href*="?ats="]
+pornhub.com##.uploadBtnContentSpicevids
+pornhub.com##.livesex
+pornhub.com##.realsex
+pornhub.com##div.container:style(margin-top: 0px !important)
+pornhub.com##.mgp_overlayContainer
+pornhub.com###pb_block
+||pornhub.com/_xa/ads
+pornhub.com##+js(rc, hasAdAlert, header)
+pornhub.com##+js(nostif, adsbytrafficjunkycontext)
+pornhub.com##+js(acs, Object.defineProperty, trafficjunky)
+pornhub.com##+js(nowoif, ads)
+pornhub.com##+js(set, page_params.holiday_promo, true)
+pornhub.com##+js(set-constant, page_params.holiday_promo_prem, true)
+/ht.js?site_$domain=pornhub.com
+
+!
+! xhamster.com
+xhamster.*##div[data-role="promo-messages-wrapper"]
+xhamster.*##.video-thumb[class*="__look-like-item"]
+xhamster.*##div[class*="sp-b"]
+xhamster.*##div[class*="widget-section"]
+xhamster.*##div[class*="cam-wgt"]
+xhamster.*##[class*="sp-l"]
+xhamster.*##[class*="containerBottomSpot"]
+xhamster.com##[class$="-ts-init"]
+||xhamster.com*/vast?
+||brick.xhamster.com^
+&spotpagetype=*&statsuid=$xhr,domain=xhamster.com
+
+!
 ! xgroovy.com
 ||a.orbsrv.com/ad-provider.js^
 ||magsrv.com/splash.php^
