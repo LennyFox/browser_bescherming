@@ -31,6 +31,7 @@ eporner.com##.vjs-inplayer-container
 ||eporner.com/dot/
 ||eporner.com/event.php
 ||eporner.com/xhr/vast/
+||*$third-party,domain=eporner.com
 
 !
 ! pornhub.com
@@ -44,6 +45,9 @@ pornhub.com##div.container:style(margin-top: 0px !important)
 pornhub.com##.mgp_overlayContainer
 pornhub.com###pb_block
 ||pornhub.com/_xa/ads
+*$websocket,domain=pornhub.com
+||pornhub.com^$popup
+||*$popup,domain=pornhub.com
 pornhub.com##+js(rc, hasAdAlert, header)
 pornhub.com##+js(nostif, adsbytrafficjunkycontext)
 pornhub.com##+js(acs, Object.defineProperty, trafficjunky)
@@ -63,7 +67,9 @@ xhamster.*##[class*="sp-l"]
 xhamster.*##[class*="containerBottomSpot"]
 xhamster.com##[class$="-ts-init"]
 ||xhamster.com*/vast?
-||brick.xhamster.com^
+||xhcdn.com/site/*/ntvb.gif,$domain=xhamster.com
+||xhamster.com^$popup
+||*$popup,domain=xhamster.com
 &spotpagetype=*&statsuid=$xhr,domain=xhamster.com
 
 !
