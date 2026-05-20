@@ -24,17 +24,8 @@ youtube.com##+js(set, playerResponse.playerAds, [])
 youtube.com##+js(set, ytInitialPlayerResponse.adBreakHeartbeatParams, undefined)
 youtube.com##+js(set, ytInitialPlayerResponse.adBreaks, [])
 !
-! Youtube remove Ads
-||youtube.com/playlist?list=$xhr,1p,replace=/"adPlacements"/"no_ads"/
-||youtube.com/playlist?list=$xhr,1p,replace=/"adSlots"/"no_ads"/
-||youtube.com/watch?$xhr,1p,replace=/"adPlacements"/"no_ads"/
-||youtube.com/watch?$xhr,1p,replace=/"adSlots"/"no_ads"/
-||youtube.com/youtubei/v1/get_watch?$xhr,1p,replace=/"adPlacements"/"no_ads"/
-||youtube.com/youtubei/v1/get_watch?$xhr,1p,replace=/"adSlots"/"no_ads"/
-||youtube.com/youtubei/v1/player?$xhr,1p,replace=/"adPlacements"/"no_ads"/
-||youtube.com/youtubei/v1/player?$xhr,1p,replace=/"adSlots"/"no_ads"/
+! Youtube redirect ads
 ||ads.youtube.com/|$xhr,3p,redirect=noop.txt
-*_ad_$media,domain=youtube.com,3p
 !
 ! eporner.com
 eporner.com##.hptab
