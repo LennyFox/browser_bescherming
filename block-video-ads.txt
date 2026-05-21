@@ -1,14 +1,15 @@
 [AdBlockPlus 2.0]
 !
 ! Version: 2026
-! Title: Hide in video ads of Youtube
+! Title: Hide advertisements on Youtube
 !
 ! Expires: 365 days
 ! You are free to copy and distribute this file, but use at your own risk
 !
 ! Youtube – Hide sponsored 
-youtube.com##video-display-compact-button-group-layout-view-model
+youtube.com##ytd-ad-slot-renderer
 youtube.com##ytd-ad-slot-renderer.style-scope.ytd-item-section-renderer
+youtube.com##video-display-compact-button-group-layout-view-model
 
 ! Youtube - Hide chat
 youtube.com###chatframe
@@ -24,8 +25,6 @@ youtube.com##+js(set, playerResponse.playerAds, [])
 youtube.com##+js(set, ytInitialPlayerResponse.adBreakHeartbeatParams, undefined)
 youtube.com##+js(set, ytInitialPlayerResponse.adBreaks, [])
 !
-! Youtube redirect ads
-||ads.youtube.com/|$xhr,3p,redirect=noop.txt
 !
 ! eporner.com
 eporner.com##.hptab
