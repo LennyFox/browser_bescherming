@@ -33,5 +33,6 @@ cnn.com#%#(()=>{document.addEventListener('DOMContentLoaded',()=>{setTimeout(fun
 pornhub.com,xhamster.com,pornhub.com,xgroovy.com,xvideos.com,xnxx.com,redtube.com#%#//scriptlet('prevent-window-open')
 vast$domain=domain=pornhub.com|xhamster.com|pornhub.com|xgroovy.com|xvideos.com|xnxx.com|redtube.com
 /ads^$domain=domain=pornhub.com|xhamster.com|pornhub.com|xgroovy.com|xvideos.com|xnxx.com|redtube.com
+/pop^$domain=domain=pornhub.com|xhamster.com|pornhub.com|xgroovy.com|xvideos.com|xnxx.com|redtube.com
 
 
