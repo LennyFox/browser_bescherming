@@ -5,6 +5,9 @@
 !
 ! Expires: 365 days
 ! You are free to copy and distribute this file, but use at your own risk
+
+! Youtube
+www.youtube.com##ytd-in-feed-ad-layout-renderer
 !
 ! --- YouTube ads cleanup ---
 youtube.com##+js(json-prune, playerResponse.adPlacements playerResponse.playerAds playerResponse.adSlots adPlacements playerAds adSlots)
