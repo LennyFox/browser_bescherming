@@ -30,7 +30,6 @@ cnn.com#%#(()=>{document.addEventListener('DOMContentLoaded',()=>{setTimeout(fun
 ! prevent annoying popups and ad redirects to 10 most common adult web sites
 !
 ||*$popup,subdocument,websocket,third-party,domain=pornhub.com|xhamster.com|pornhub.com|xgroovy.com|xvideos.com|xnxx.com|redtube.com
-pornhub.com,xhamster.com,pornhub.com,xgroovy.com,xvideos.com,xnxx.com,redtube.com#%#//scriptlet('abort-current-inline-script')
 pornhub.com,xhamster.com,pornhub.com,xgroovy.com,xvideos.com,xnxx.com,redtube.com#%#//scriptlet('prevent-window-open')
 vast$domain=domain=pornhub.com|xhamster.com|pornhub.com|xgroovy.com|xvideos.com|xnxx.com|redtube.com
 /ads^$domain=domain=pornhub.com|xhamster.com|pornhub.com|xgroovy.com|xvideos.com|xnxx.com|redtube.com
