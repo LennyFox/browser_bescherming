@@ -27,32 +27,12 @@ cnn.com#%#(()=>{window.FAVE=window.FAVE||{};const s={set:(s,e,a,n)=>{if(s?.setti
 cnn.com#%#(()=>{document.addEventListener('DOMContentLoaded',()=>{setTimeout(function(){(function(){window.AdFuel={queueRegistry(){},destroySlots(){}}})()},500);})})();
 
 !
-! prevent annoying popups from to adult web sites
+! prevent annoying popups and ad redirects to 10 most common adult web sites
 !
-||pornhub.com^$popup
-||*$popup,domain=pornhub.com
-*$websocket,domain=pornhub.com
-/ht.js?site_^$domain=pornhub.com
-/_xa/ads^$domain=pornhub.com
-/ht.js?site_$domain=pornhub.com
-pornhub.com##a[href^="https://ads.trafficjunky.net/"]
-pornhub.com##+js(nostif, adsbytrafficjunkycontext)
+||*$popup,subdocument,websocket,third-party,domain=pornhub.com|xhamster.com|pornhub.com|xgroovy.com|xvideos.com|xnxx.com|redtube.com
+pornhub.com,xhamster.com,pornhub.com,xgroovy.com,xvideos.com,xnxx.com,redtube.com#%#//scriptlet('abort-current-inline-script')
+pornhub.com,xhamster.com,pornhub.com,xgroovy.com,xvideos.com,xnxx.com,redtube.com#%#//scriptlet('prevent-window-open')
+vast$domain=domain=pornhub.com|xhamster.com|pornhub.com|xgroovy.com|xvideos.com|xnxx.com|redtube.com
+/ads^$domain=domain=pornhub.com|xhamster.com|pornhub.com|xgroovy.com|xvideos.com|xnxx.com|redtube.com
 
-||xhamster.com^$popup
-||*$popup,domain=xhamster.com
-&spotpagetype=*&statsuid=$xhr,domain=xhamster.com
-/vast?^$domain=xhamster.com
-xhamster.*##div[data-role="promo-messages-wrapper"]
-
-||xgroovy.com^$popup
-||*$popup,domain=xgroovy.com
-/ad-provider.js^$domain=xgroovy.com
-/splash.php^$domain=xgroovy.com
-
-||eporner.com.com^$popup
-||*$popup,domain=eporner.com
-/dot/^$domain=eporner.com
-/event.php^$domain=eporner.com
-/vast/^$domain=eporner.com
-||*$third-party,domain=eporner.com
 
