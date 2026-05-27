@@ -6,45 +6,18 @@
 ! Expires: 365 days
 ! You are free to copy and distribute this file, but use at your own risk
 !
-! Youtube – Hide sponsored 
-youtube.com##ytd-ad-slot-renderer
-youtube.com##ytd-ad-slot-renderer.style-scope.ytd-item-section-renderer
-youtube.com##video-display-compact-button-group-layout-view-model
-
-! Youtube - Hide chat
-youtube.com###chatframe
-! 
-! Youtube in video ads
-*_ad_$media,domain=youtube.com,3p
-! @@||youtube.com/get_video_info?*timedtext_editor$xhr,1p
-youtube.com##+js(trusted-replace-xhr-response, '"adPlacements"', '"no_ads"', /playlist\?list=|\/player(?:\?.+)?$|watch\?[tv]=/)
-youtube.com##+js(trusted-replace-xhr-response, /"adPlacements.*?([A-Z]"\}|"\}{2\,4})\}\]\,/, , /playlist\?list=|\/player(?:\?.+)?$|watch\?[tv]=/)
-youtube.com##+js(trusted-replace-xhr-response, /"adPlacements.*?("adSlots"|"adBreakHeartbeatParams")/gms, $1, /\/player(?:\?.+)?$/)
-youtube.com##+js(trusted-replace-fetch-response, '"adPlacements"', '"no_ads"', player?)
-youtube.com##+js(trusted-replace-fetch-response, '"adSlots"', '"no_ads"', player?)
-||youtube.com/playlist?list=$xhr,1p,replace=/"adPlacements"/"no_ads"/
-||youtube.com/playlist?list=$xhr,1p,replace=/"adSlots"/"no_ads"/
-||youtube.com/watch?$xhr,1p,replace=/"adPlacements"/"no_ads"/
-||youtube.com/watch?$xhr,1p,replace=/"adSlots"/"no_ads"/
-||youtube.com/youtubei/v1/player?$xhr,1p,replace=/"adPlacements"/"no_ads"/
-||youtube.com/youtubei/v1/player?$xhr,1p,replace=/"adSlots"/"no_ads"/
+! --- YouTube ads cleanup ---
+youtube.com##+js(json-prune, playerResponse.adPlacements playerResponse.playerAds playerResponse.adSlots adPlacements playerAds adSlots)
 youtube.com##+js(set, ytInitialPlayerResponse.playerAds, undefined)
 youtube.com##+js(set, ytInitialPlayerResponse.adPlacements, undefined)
 youtube.com##+js(set, ytInitialPlayerResponse.adSlots, undefined)
-youtube.com##+js(set, playerResponse.adPlacements, undefined)
-youtube.com##+js(json-prune, playerResponse.adPlacements playerResponse.playerAds playerResponse.adSlots adPlacements playerAds adSlots important)
-youtube.com##.ytlr-horizontal-list-renderer__items > .yt-virtual-list__container > .yt-virtual-list__item--visible.yt-virtual-list__item--selected.yt-virtual-list__item:has-text(Ad)
-||googlevideo.com/initplayback?source=youtube&*c=TVHTML5&*oad=$xhr,domain=youtube.com
+
+! --- Shorts ads ---
 youtube.com##+js(json-prune-fetch-response, reelWatchSequenceResponse.entries.[-].command.reelWatchEndpoint.adClientParams.isAd entries.[-].command.reelWatchEndpoint.adClientParams.isAd, , propsToMatch, url:/reel_watch_sequence?)
 youtube.com##+js(json-prune, entries.[-].command.reelWatchEndpoint.adClientParams.isAd)
-||youtube.com/youtubei/v1/get_watch?$xhr,1p,replace=/"adPlacements"/"no_ads"/
-||youtube.com/youtubei/v1/get_watch?$xhr,1p,replace=/"adSlots"/"no_ads"/
-||youtube.com/get_video$media,redirect=noopmp4-1s,domain=games2rule.com
-*$frame,denyallow=facebook.com|google.com|youtube.com,domain=foxseotools.com
-*$frame,denyallow=cloudflare.com|facebook.com|google.com|hcaptcha.com|youtube.com|jungleofferwall.com,domain=dutchycorp.*
-*$script,3p,denyallow=cloudflare.net|fastly.net|google.com|googleapis.com|gstatic.com|jwpcdn.com|jsdelivr.net|eastream.net|youtube.com|ytimg.com,domain=vidfast.co
-*$frame,denyallow=cloudflare.com|facebook.com|google.com|hcaptcha.com|youtube.com,domain=fc.lc|fc-lc.com
-||youtube.com/embed/*$domain=1shortlink.com
+
+! --- Fallback for stubborn player responses ---
+youtube.com##+js(trusted-replace-fetch-response, '"adPlacements"', '"no_ads"', player?)
 !
 ! eporner.com
 eporner.com##.hptab
